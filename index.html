@@ -3,50 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZR1 Tech | بوابة المعرفة التكنولوجية</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ZR1 Tech | قيادة المستقبل التكنولوجي</title>
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body>
-
-    <!-- شريط التنقل -->
+<body lang="ar">
+    <div class="progress-bar" id="progressBar"></div>
     <nav class="navbar">
         <div class="nav-content">
             <a href="#" class="logo">ZR1</a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="#home">الرئيسية</a>
-                <a href="#tech-topics">مواضيع تكنولوجية</a>
-                <a href="#events">الفعاليات</a>
-                <a href="#research">الأبحاث</a>
+                <a href="#about">عن ZR1</a>
+                <a href="#solutions">الحلول</a>
                 <a href="#contact">الاتصال</a>
-                <div class="support-number">
-                    <a href="tel:+201006982102"><i class="fas fa-phone"></i> +20 100 698 2102</a>
-                </div>
             </div>
+            <div class="mobile-menu" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
-
-    <!-- قسم الاتصال -->
-    <section class="contact-section">
-        <div class="contact-info">
-            <div class="support-card">
-                <i class="fas fa-headset"></i>
-                <h3>الدعم الفني على مدار الساعة</h3>
-                <a href="tel:+201006982102" class="call-button"><i class="fas fa-phone"></i> +20 100 698 2102</a>
-                <p>متاح 24/7 لجميع الاستفسارات التقنية</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-en="Welcome to ZR1 Technologies" data-ar="مرحبًا في عالم ZR1">مرحبًا في عالم ZR1</h1>
+            <p data-en="Redefining Technological Boundaries" data-ar="إعادة تعريف الحدود التكنولوجية">إعادة تعريف الحدود التكنولوجية</p>
+            <div class="hero-buttons">
+                <a href="#solutions" class="btn primary-btn" data-en="Explore Solutions" data-ar="استكشف الحلول">استكشف الحلول</a>
+                <a href="#demo" class="btn secondary-btn" data-en="Live Demo" data-ar="عرض حي">عرض حي</a>
             </div>
         </div>
     </section>
-
-    <!-- الفوتر -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="emergency-support">
-                <h4>الاتصال الطارئ:</h4>
-                <a href="tel:+201006982102" class="emergency-number"><i class="fas fa-life-ring"></i> +20 100 698 2102</a>
-            </div>
-        </div>
+        <p>&copy; <span id="year"></span> ZR1 Technologies</p>
     </footer>
-
 </body>
 </html>
